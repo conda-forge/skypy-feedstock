@@ -1,5 +1,5 @@
 {% set name = "skypy" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skypy-{{ version }}.tar.gz
-  sha256: 7c24d38abddbd7771fb1ef44b4749b2165de47779175e91f29815e3f7fd8460e
+  sha256: 6e1996f00f027254538a999b675a2d66c5fde58e50751e94e49cb0fe00b5bcd8
 
 build:
   number: 0
