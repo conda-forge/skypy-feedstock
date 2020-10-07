@@ -5,9 +5,13 @@ Home: http://skypy.info
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skypy-feedstock/blob/master/LICENSE.txt)
 
 Summary: A package for modelling the Universe.
+
+Development: https://github.com/skypyproject/skypy
+
+Documentation: https://skypy.readthedocs.io
 
 This package contains methods for modelling the Universe, galaxies and the
 Milky Way. Also included are methods for generating observed data.
