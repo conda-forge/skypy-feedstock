@@ -1,5 +1,5 @@
 {% set name = "skypy" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skypy-{{ version }}.tar.gz
-  sha256: 32d3c457f150b89f3639c56dea8693dfc4a91e407bdbe718345fbb95edcb40e5
+  sha256: e824fd69da7879d64ddc2dc07555635b18cd4fd165075ba24e0f8878542fad27
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - setuptools_scm
   run:
-    - astropy
+    - astropy >=4
     - networkx
     - numpy
     - python >=3.6
@@ -33,15 +33,8 @@ requirements:
 test:
   imports:
     - skypy
-    - skypy.cluster
-    - skypy.extern
-    - skypy.galaxy
-    - skypy.gravitational_wave
-    - skypy.halo
+    - skypy.galaxies
     - skypy.pipeline
-    - skypy.position
-    - skypy.power_spectrum
-    - skypy.supernova
     - skypy.utils
   commands:
     - pip check
@@ -51,6 +44,7 @@ test:
     - pip
     - pytest-astropy
     - pytest-rerunfailures
+    - speclite >=0.11
 
 about:
   home: http://skypy.info
