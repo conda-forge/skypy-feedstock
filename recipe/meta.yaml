@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - setuptools_scm
   run:
-    - astropy
+    - astropy >=4
     - networkx
     - numpy
     - python >=3.6
@@ -33,15 +33,8 @@ requirements:
 test:
   imports:
     - skypy
-    - skypy.cluster
-    - skypy.extern
-    - skypy.galaxy
-    - skypy.gravitational_wave
-    - skypy.halo
+    - skypy.galaxies
     - skypy.pipeline
-    - skypy.position
-    - skypy.power_spectrum
-    - skypy.supernova
     - skypy.utils
   commands:
     - pip check
@@ -51,6 +44,7 @@ test:
     - pip
     - pytest-astropy
     - pytest-rerunfailures
+    - speclite >=0.11
 
 about:
   home: http://skypy.info
