@@ -44,7 +44,7 @@ test:
     - pip
     - pytest-astropy
     - pytest-rerunfailures
-    - speclite >=0.11
+    - speclite >=0.14
 
 about:
   home: http://skypy.info
