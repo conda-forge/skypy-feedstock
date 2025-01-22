@@ -11,7 +11,7 @@ source:
   sha256: 7106db578cd5d10f73c0660984bed3defce5e208418697f9c9bfae625c3bd55b
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - skypy = skypy.pipeline.scripts.skypy:main
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - setuptools_scm
   run:
-    - astropy >=4
+    - astropy-base >=4
     - networkx
     - numpy
     - python >=3.6
