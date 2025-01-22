@@ -11,7 +11,7 @@ source:
   sha256: 7106db578cd5d10f73c0660984bed3defce5e208418697f9c9bfae625c3bd55b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - skypy = skypy.pipeline.scripts.skypy:main
@@ -28,7 +28,7 @@ requirements:
     - numpy
     - python >=3.6
     - pyyaml
-    - scipy
+    - scipy <=1.14
 
 test:
   imports:
