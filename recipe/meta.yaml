@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skypy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skypy-{{ version }}.tar.gz
   sha256: 7106db578cd5d10f73c0660984bed3defce5e208418697f9c9bfae625c3bd55b
 
 build:
-  number: 2
+  number: 3
   noarch: python
   entry_points:
     - skypy = skypy.pipeline.scripts.skypy:main
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools_scm
   run:
     - astropy-base >=4
     - networkx
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - scipy <=1.14
 
@@ -45,6 +45,7 @@ test:
     - pytest-astropy
     - pytest-rerunfailures
     - speclite >=0.14
+    - python {{ python_min }}
 
 about:
   home: http://skypy.info
