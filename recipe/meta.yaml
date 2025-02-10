@@ -28,7 +28,7 @@ requirements:
     - numpy
     - python >={{ python_min }}
     - pyyaml
-    - scipy <=1.14
+    - scipy
 
 test:
   imports:
